@@ -3,10 +3,11 @@
   "version": "1.0.1",
   "type": "app",
   "dependencies": {
-    "hoodie-server": "~0.8.14",
+    "hoodie-server": "1.1.2",
     "hoodie-plugin-appconfig": "~0.1.0",
     "hoodie-plugin-email": "~0.1.1",
-    "hoodie-plugin-users": "0.0.9"
+    "hoodie-plugin-users": "0.0.9",
+    "snyk": "^1.17.0"
   },
   "subdomain": "hoodie-nobackend",
   "domains": [
@@ -14,7 +15,9 @@
     "couch.hoodie-nobackend.jit.su"
   ],
   "scripts": {
-    "start": "node node_modules/hoodie-server/bin/start"
+    "start": "node node_modules/hoodie-server/bin/start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "hoodie": {
     "plugins": [
@@ -22,5 +25,6 @@
       "hoodie-plugin-email",
       "hoodie-plugin-users"
     ]
-  }
+  },
+  "snyk": true
 }

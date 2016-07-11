@@ -1,0 +1,33 @@
+version: v1.5.0
+ignore: {}
+patch:
+  'npm:minimatch:20160620':
+    - hoodie-server > hoodie-pocket > hoodie-app > @hoodie/store > @hoodie/store-server > express-pouchdb > pouchdb-find > jshint > cli > glob > minimatch:
+        patched: '2016-07-11T23:35:32.988Z'
+    - hoodie-server > hoodie.js > pouchdb > leveldown > prebuild > node-ninja > minimatch:
+        patched: '2016-07-11T23:35:32.988Z'
+    - hoodie-server > hoodie-pocket > hoodie-app > pouchdb > leveldown > prebuild > node-ninja > glob > minimatch:
+        patched: '2016-07-11T23:35:32.988Z'
+    - hoodie-server > hoodie.js > pouchdb > leveldown > prebuild > node-ninja > glob > minimatch:
+        patched: '2016-07-11T23:35:32.988Z'
+    - hoodie-server > hoodie-pocket > hoodie-app > @hoodie/store > @hoodie/store-server > express-pouchdb > pouchdb-find > jshint > minimatch:
+        patched: '2016-07-11T23:35:32.988Z'
+    - hoodie-server > hoodie.js > @hoodie/store > @hoodie/store-server > express-pouchdb > pouchdb-find > jshint > minimatch:
+        patched: '2016-07-11T23:35:32.988Z'
+    - hoodie-server > hoodie.js > @hoodie/admin > ember-truth-helpers > ember-cli-babel > broccoli-babel-transpiler > babel-core > minimatch:
+        patched: '2016-07-11T23:35:32.988Z'
+    - hoodie-server > hoodie-pocket > hoodie-app > pouchdb > leveldown > prebuild > node-ninja > minimatch:
+        patched: '2016-07-11T23:35:32.988Z'
+    - hoodie-server > hoodie.js > @hoodie/store > @hoodie/store-server > express-pouchdb > pouchdb-find > jshint > cli > glob > minimatch:
+        patched: '2016-07-11T23:35:32.988Z'
+  'npm:moment:20160126':
+    - hoodie-server > hoodie-plugins-manager > hoodie-plugins-api > moment:
+        patched: '2016-07-11T23:35:32.988Z'
+  'npm:qs:20140806-1':
+    - hoodie-server > hoodie-plugins-manager > couchr > follow > request > qs:
+        patched: '2016-07-11T23:35:32.988Z'
+  'npm:request:20160119':
+    - hoodie-server > hoodie-plugins-manager > couchr > follow > request:
+        patched: '2016-07-11T23:35:32.988Z'
+    - hoodie-server > couchr > follow > request:
+        patched: '2016-07-11T23:35:32.988Z'
